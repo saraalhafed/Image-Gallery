@@ -1,0 +1,33 @@
+.cardContainer{
+   
+    display: flex;
+    justify-content: space-around;
+    gap:4rem;
+    flex-wrap: wrap;
+    margin: 2rem;
+    padding: 3rem;
+    margin-top: 6rem;
+}
+img{
+    width:15rem;
+    height: 20rem;
+    object-fit: cover;
+    transition: transform 0.7s ease-in-out;
+}
+/* inside the element we use transition to control with the speed */
+/* hover out side the element but in sass inside the element with &:hover */
+img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    filter: grayscale(100%);
+    border-radius: 7px;
+}
+.wrapper{
+    overflow: hidden;
+    border-radius: 7px;
+}
+.title{
+    text-align: center;
+     font-size: 0.8rem;
+     color:rgb(15, 1, 1)
+}
